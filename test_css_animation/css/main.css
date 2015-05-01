@@ -1,0 +1,25 @@
+.slideshow {
+    position: relative;
+    /* necessary to absolutely position the images inside */
+    width: 300px;
+    /* same as the images inside */
+    height: 300px;
+}
+.slideshow img {
+    position: absolute;
+    display: none;
+}
+
+.next, .prev {
+    position: absolute;
+    cursor: pointer;
+    top: 70px;
+}
+
+.next {
+    right: -40px;
+}
+
+.prev {
+    left: -40px;
+}

@@ -1,0 +1,199 @@
+/*! Building Interfaces HTML5 template */
+
+
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+		
+ 
+.flex-items-default {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+ .flex-item {
+  margin-left: auto;
+  margin-right: auto;
+    height: 100px;
+}
+
+ .flex-item-1 {
+    width: 50%;
+    height: 350px;
+}
+	
+
+#steph_curry {
+	   display: block;	
+		height: 350px;
+		width: 350px;
+        margin: auto;
+        border-style: dotted;
+		background: url('../img/steph_curry.jpg');
+		background-size: contain;
+/*		visibility: hidden;*/
+}
+
+
+#klay {
+	   display: block;	
+		height: 350px;
+		width: 350px;
+        margin: auto;
+        border-style: dotted;
+		background: url('../img/klay.png');
+		background-size: contain;
+/*		visibility: hidden;*/
+}
+
+#lebron {
+	   display: block;	
+		height: 350px;
+		width: 350px;
+        margin: auto;
+        border-style: dotted;
+		background: url('../img/lebron.svg');
+		background-size: contain;
+/*		visibility: hidden;*/
+}
+
+#kobe {
+	   display: block;	
+		height: 350px;
+		width: 350px;
+        margin: auto;
+        border-style: dotted;
+		background: url('../img/kobe.png');
+		background-size: contain;
+		visibility: hidden;
+}
+
+.next, .prev {
+    position: absolute;
+    cursor: pointer;
+    top: 70px;
+}
+
+.next {
+    right: -40px;
+}
+
+.prev {
+    left: -40px;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* Mobile */
+@media only screen and (min-width: 480px) {}
+/* Intermediate */
+@media only screen and (min-width: 768px) {}
+/* Wide */
+@media only screen and (min-width: 1140px) {}
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
